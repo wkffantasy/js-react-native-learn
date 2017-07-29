@@ -1,4 +1,13 @@
 /**
+ * @Author: wangkongfei
+ * @Date:   2017-07-29T17:53:46+08:00
+ * @Last modified by:   wangkongfei
+ * @Last modified time: 2017-07-29T19:37:47+08:00
+ */
+
+
+
+/**
  * Sample React Native App
  * https://github.com/facebook/react-native
  * @flow
@@ -12,42 +21,15 @@ import {
   View
 } from 'react-native';
 
+import HomeScreen from './Components/HomeScreen';
+
 export default class kfProject extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+        <HomeScreen/>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('kfProject', () => kfProject);
