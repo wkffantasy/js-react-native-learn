@@ -15,23 +15,7 @@ import {
 
 import { StackNavigator,TabNavigator } from 'react-navigation';
 
-// class HomeTab extends Component {
-//     static navigationOptions = {
-//         title:'Home',
-//     };
-//     render() {
-//         return (
-//             <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
-//                 <Text >{'HomeTab'}</Text>
-//             </View>
-//         );
-//     }
-// }
-// export default StackNavigator({
-//     Home: { screen: HomeTab },
-// });
-
-export default class HomeTab extends Component {
+class HomeTab extends Component {
     static navigationOptions = {
         title:'Home',
     };
@@ -43,6 +27,22 @@ export default class HomeTab extends Component {
         );
     }
 }
+export default StackNavigator({
+    Home: { screen: HomeTab },
+});
+
+// export default class HomeTab extends Component {
+//     static navigationOptions = {
+//         title:'Home',
+//     };
+//     render() {
+//         return (
+//             <View style={{flex:1,alignItems:'center',justifyContent:'center',backgroundColor:'#F5FCFF'}}>
+//                 <Text >{'HomeTab'}</Text>
+//             </View>
+//         );
+//     }
+// }
 
 
 
