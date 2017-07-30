@@ -31,6 +31,11 @@ import { StackNavigator,TabNavigator } from 'react-navigation';
 //     Home: { screen: SecondTab },
 // });
 
+/*
+*
+* 22222
+*
+* */
 
 export default class SecondTab extends Component {
     static navigationOptions = {
@@ -44,6 +49,12 @@ export default class SecondTab extends Component {
         );
     }
 }
+/*
+*
+*
+* 22222
+*
+* */
 
 const styles = StyleSheet.create({
     container: {
