@@ -34,7 +34,7 @@ import { StackNavigator,TabNavigator } from 'react-navigation';
 /*
 *
 *
-*11111
+*
 * */
 
 export default class SecondTab extends Component {
@@ -49,13 +49,6 @@ export default class SecondTab extends Component {
         );
     }
 }
-/*
-*
-*
-* 11111
-*
-*
-* */
 
 const styles = StyleSheet.create({
     container: {
