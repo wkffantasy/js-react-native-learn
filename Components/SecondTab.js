@@ -31,11 +31,6 @@ import { StackNavigator,TabNavigator } from 'react-navigation';
 //     Home: { screen: SecondTab },
 // });
 
-/*
-*
-*
-*
-* */
 
 export default class SecondTab extends Component {
     static navigationOptions = {
