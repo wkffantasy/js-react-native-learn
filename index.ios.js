@@ -16,14 +16,17 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
-  View
 } from 'react-native';
+
+import { StackNavigator } from 'react-navigation';
 
 import HomeScreen from './Components/HomeScreen';
 
-export default class kfProject extends Component {
+class kfProject extends Component {
+    // static navigationOptions = {
+    //     title: 'Welcome',
+    // };
   render() {
     return (
         <HomeScreen/>
@@ -31,5 +34,8 @@ export default class kfProject extends Component {
   }
 }
 
+// const kfProject = StackNavigator({
+//    Home: {screen:test}
+// });
 
 AppRegistry.registerComponent('kfProject', () => kfProject);

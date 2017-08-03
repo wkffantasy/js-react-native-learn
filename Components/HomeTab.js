@@ -2,13 +2,11 @@
  * @Author: wangkongfei
  * @Date:   2017-07-29T17:27:43+08:00
  * @Last modified by:   wangkongfei
- * @Last modified time: 2017-07-29T17:44:50+08:00
+ * @Last modified time: 2017-07-31T22:02:28+08:00
  */
 
 import React, { Component } from 'react';
 import {
-    AppRegistry,
-    StyleSheet,
     Text,
     View
 } from 'react-native';
@@ -28,7 +26,7 @@ class HomeTab extends Component {
     }
 }
 export default StackNavigator({
-    Home: { screen: HomeTab },
+    HomeTab: { screen: HomeTab },
 });
 
 // export default class HomeTab extends Component {
@@ -43,6 +41,3 @@ export default StackNavigator({
 //         );
 //     }
 // }
-
-
-
