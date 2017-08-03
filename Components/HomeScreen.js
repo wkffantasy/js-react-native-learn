@@ -19,9 +19,12 @@
  import  SecondTab from './SecondTab';
  import  SelfInfoTab from './SelfInfoTab';
 
+ import OtherStacks from '../Common/NaviStacks';
  import TabBarItem from '../Common/TabBarItem';
 
-export  default  TabNavigator({
+
+
+const TabNavi =  TabNavigator({
     Home:{
       screen:HomeTab,
       navigationOptions:({navigation}) => ({
@@ -100,3 +103,11 @@ export  default  TabNavigator({
   },
 }
 );
+
+const RootNavi = StackNavigator({
+  Tab:{
+    screen:TabNavi
+  },
+  ...OtherStacks,
+});
+export  default RootNavi;

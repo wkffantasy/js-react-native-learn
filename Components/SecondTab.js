@@ -11,11 +11,7 @@ import {
     View
 } from 'react-native';
 
-import OtherStacks from '../Common/NaviStacks';
-
-import { StackNavigator,TabNavigator } from 'react-navigation';
-
-class SecondTab extends Component {
+export default class SecondTab extends Component {
     static navigationOptions = {
         title:'Second',
     };
@@ -27,7 +23,3 @@ class SecondTab extends Component {
         );
     }
 }
-export default StackNavigator({
-    SecondTab: { screen: SecondTab },
-    ...OtherStacks,
-});

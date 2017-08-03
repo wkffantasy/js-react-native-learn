@@ -11,11 +11,7 @@ import {
     View
 } from 'react-native';
 
-import { StackNavigator,TabNavigator } from 'react-navigation';
-
-import OtherStacks from '../Common/NaviStacks';
-
-class SelfInfoTab extends Component {
+export default class SelfInfoTab extends Component {
     static navigationOptions = {
         title:'SelfInfo',
     };
@@ -37,8 +33,3 @@ class SelfInfoTab extends Component {
         );
     }
 }
-
-export default StackNavigator({
-    SelfInfoTab: { screen: SelfInfoTab },
-    ...OtherStacks,
-});

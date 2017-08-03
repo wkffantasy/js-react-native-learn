@@ -11,11 +11,7 @@ import {
     View
 } from 'react-native';
 
-import OtherStacks from '../Common/NaviStacks';
-
-import { StackNavigator,TabNavigator } from 'react-navigation';
-
-class HomeTab extends Component {
+export default class HomeTab extends Component {
     static navigationOptions = {
         title:'Home',
     };
@@ -37,7 +33,3 @@ class HomeTab extends Component {
         );
     }
 }
-export default StackNavigator({
-    HomeTab: { screen: HomeTab },
-    ...OtherStacks,
-});
