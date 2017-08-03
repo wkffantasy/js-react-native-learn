@@ -3,7 +3,7 @@
 import React,{Component} from 'react';
 import {Image} from 'react-native';
 
-const tabbarImageWH = 25;
+const tabbarImageWH = 20;
 
 export default class TabBarItem extends Component {
   render (){

@@ -15,6 +15,13 @@ export default class Test1Component extends Component {
     static navigationOptions = {
         title:'test1',
     };
+    componentWillMount(){
+      console.log('this.props == ',this.props);
+      console.log('test1 componentWillMount');
+    }
+    componentDidMount(){
+      console.log('test1 componentDidMount');
+    }
     render() {
       const { params } = this.props.navigation.state;
       const { navigate } = this.props.navigation;
