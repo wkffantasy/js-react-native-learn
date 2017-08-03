@@ -7,25 +7,24 @@
 
 import React, { Component } from 'react';
 import {
-    AppRegistry,
-    StyleSheet,
     Text,
     View
 } from 'react-native';
-
-import { StackNavigator,TabNavigator } from 'react-navigation';
-
 
 export default class Test1Component extends Component {
     static navigationOptions = {
         title:'test1',
     };
     render() {
+      const { params } = this.props.navigation.state;
+      const { navigate } = this.props.navigation;
         return (
-            <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+            <View style={{flex:1,justifyContent:'center',alignItems:'center',backgroundColor:'red'}}>
                 <Text >test1</Text>
+                <Text style={{margin:20,color:'yellow',fontSize:22}}>
+                 {`${params.name}`}
+                 </Text>
             </View>
         );
     }
 }
-

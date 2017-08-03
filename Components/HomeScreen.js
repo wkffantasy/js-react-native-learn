@@ -21,25 +21,6 @@
 
  import TabBarItem from '../Common/TabBarItem';
 
-// class HomeScreen extends Component {
-//   static navigationOptions = {
-//         title: '首页',//设置标题内容
-//         header:{
-//             backTitle: ' ',//返回按钮标题内容（默认为上一级标题内容）
-//         }
-//     }
-//     constructor(props) {
-//         super(props);
-//     }
-//     render() {
-//         return (
-//             <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-//                <Text>首页</Text>
-//             </View>
-//         );
-//     }
-// }
-
 export  default  TabNavigator({
     Home:{
       screen:HomeTab,

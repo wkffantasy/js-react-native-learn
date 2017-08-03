@@ -13,14 +13,26 @@ import {
 
 import { StackNavigator,TabNavigator } from 'react-navigation';
 
+import OtherStacks from '../Common/NaviStacks';
+
 class SelfInfoTab extends Component {
     static navigationOptions = {
         title:'SelfInfo',
     };
+    _jumpToTest2(){
+      const { navigate } = this.props.navigation;
+      navigate('Test2');
+    }
     render() {
         return (
             <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
                 <Text >SelfInfoTab</Text>
+                <Text
+                  style={{margin:10,fontSize:20}}
+                  onPress={()=>{this._jumpToTest2()}}
+                >
+                  {'click this to jump'}
+                </Text>
             </View>
         );
     }
@@ -28,4 +40,5 @@ class SelfInfoTab extends Component {
 
 export default StackNavigator({
     SelfInfoTab: { screen: SelfInfoTab },
+    ...OtherStacks,
 });

@@ -11,33 +11,33 @@ import {
     View
 } from 'react-native';
 
+import OtherStacks from '../Common/NaviStacks';
+
 import { StackNavigator,TabNavigator } from 'react-navigation';
 
 class HomeTab extends Component {
     static navigationOptions = {
         title:'Home',
     };
+    _jumpToTest1(){
+      const { navigate } = this.props.navigation;
+      navigate('Test1',{name:'fantasy'});
+    }
     render() {
         return (
             <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
                 <Text >{'HomeTab'}</Text>
+                <Text
+                  style={{margin:10,fontSize:20}}
+                  onPress={()=>{this._jumpToTest1()}}
+                >
+                  {'click this to jump'}
+                </Text>
             </View>
         );
     }
 }
 export default StackNavigator({
     HomeTab: { screen: HomeTab },
+    ...OtherStacks,
 });
-
-// export default class HomeTab extends Component {
-//     static navigationOptions = {
-//         title:'Home',
-//     };
-//     render() {
-//         return (
-//             <View style={{flex:1,alignItems:'center',justifyContent:'center',backgroundColor:'#F5FCFF'}}>
-//                 <Text >{'HomeTab'}</Text>
-//             </View>
-//         );
-//     }
-// }
